@@ -3,6 +3,7 @@ import './globals.css'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 // import { BranchProvider } from '@/context/BranchContext'
+import KaagapayPopup from "@/components/popup-kaagapay";
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
             {children}
           </main>
           <Footer />
+          <KaagapayPopup />
         {/* </BranchProvider> */}
       </body>
     </html>
